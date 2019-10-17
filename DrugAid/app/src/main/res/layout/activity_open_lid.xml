@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".OpenLid">
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="161dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="204dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginStart="125dp"
+        android:background="@drawable/redswitch"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/patientNumber"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:height="20dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="Enter patient number..."
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Click to open the lid for patient:"
+        android:textAlignment="center"
+        android:textColor="#DA1010"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientNumber" />
+</androidx.constraintlayout.widget.ConstraintLayout>
